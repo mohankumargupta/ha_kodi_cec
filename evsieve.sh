@@ -2,6 +2,8 @@
 
 # Run as root
 
+# https://github.com/KarsMulder/evsieve
+
 set -x
 
 event=$(grep -A2 rc0 /proc/bus/input/devices |tail -n1|sed -r 's/.*(event[0-9]+).*$/\1/')
